@@ -12,7 +12,7 @@
       } else 
       {
         $name = test_input($_POST["name"]);
-        if (!preg_match("/^([a-zA-Z' ]*)$/", $name));
+        if (!preg_match("/^([a-zA-Z ])*$/", $name))
         {
           $name_error = "Only lettersand white space allowed";
         }

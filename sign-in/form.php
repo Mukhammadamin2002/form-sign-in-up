@@ -4,16 +4,17 @@
 <style> .error{color: red;=}</style>
   <div class="container">  
     <form id="contact" action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
-     <h3>Quick Contact</h3>
-       <h4>Contact us today, and get reply with in 24 hours!</h4>
+     <h3 align="center">Sign in</h3>
+       <h4 align="center">Contact us today, and get reply with in 24 hours!</h4>
         <fieldset>
+        	<legend><span class="number">1</span>Your basic info</legend>
             <input placeholder="Your name" type="text" tabindex="1" name="name" value="<?= $name ?>" autofocus>
-            <span class="error"><?= $name_error ?? ''; ?></span>
+            <span class="error"><?= $name_error ?? '' ?></span>
         </fieldset>
 
         <fieldset>
             <input placeholder="Your Email Address" type="text" name="email" value="<?= $email ?>" tabindex="2" >
-            <span class="error"><?= $email_error ?></span>
+            <span class="error"><?= $email_error?></span>
         </fieldset>
 
         <fieldset>
