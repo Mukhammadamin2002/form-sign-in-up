@@ -37,10 +37,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
       } else 
       {
       	$password = test_input($_POST["password"]);
-      	if (!preg_match('/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{8,12}$/', $password))
+      	if (!preg_match('/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{6,12}$/', $password))
       	{
-      		$password_error = "it Should Include 8 no more Alph and Digits";
+      		$password_error = "it Should Include at least 6 no more than 12 ";
       	}
       }
     }
+
+     function test_input($data)
+   {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+   }
  ?>
