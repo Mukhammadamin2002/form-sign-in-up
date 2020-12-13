@@ -53,32 +53,33 @@
           $url_error = "Invalid URL";
         }
       }
+      // header("location: result.php?name=$name&email=$email&phone=$phone&url=$url");
 
-      if (empty($_POST["message"])) 
-      {
-        $message = "";
-      } else
-      {
-        $message = test_input($_POST["message"]);
-      }
+    //   if (empty($_POST["message"])) 
+    //   {
+    //     $message = "";
+    //   } else
+    //   {
+    //     $message = test_input($_POST["message"]);
+    //   }
 
-    if ($name_error == '' and $email_error == '' and $phone_error == '' and $url_error == '')
-      {
-         $message_body = '';
-         unset($_POST["submit"]);
-         foreach ($_POST as $key => $value) 
-         {
-           $message_body .= "$key: $value\n";
-         }
+    // if ($name_error == '' and $email_error == '' and $phone_error == '' and $url_error == '')
+    //   {
+    //      $message_body = '';
+    //      unset($_POST["submit"]);
+    //      foreach ($_POST as $key => $value) 
+    //      {
+    //        $message_body .= "$key: $value\n";
+    //      }
 
-          $to = 'mukhammadaminabdullaev01082002@gmail.com';
-          $subject = 'Contact From Submit';
-          if (mail($to, $subject, $message))
-          {
-            $success = "Message sent, thank you for contacting us!";
-            $name = $email = $phone = $message = $url = '';
-          }
-      }
+    //       $to = 'mukhammadaminabdullaev01082002@gmail.com';
+    //       $subject = 'Contact From Submit';
+    //       if (mail($to, $subject, $message))
+    //       {
+    //         $success = "Message sent, thank you for contacting us!";
+    //         $name = $email = $phone = $message = $url = '';
+    //       }
+    //   }
 
 
    }

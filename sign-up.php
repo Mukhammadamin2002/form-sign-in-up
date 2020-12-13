@@ -12,9 +12,8 @@
 </head>
 
 <body>
-  <!-- <div class="container-fluid"> -->
+  <div class="container-fluid">
     <!-- <div class="row"> -->
-      <!-- <div class="col-xl-8"></div> -->
       <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
 
         <h1>Sign Up</h1>
@@ -43,17 +42,17 @@
             <label for="bio">Biography:</label>
             <textarea id="bio" name="user_bio"></textarea>
         </fieldset>
-       
+        <fieldset>
             <label>Interests:</label>
             <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
             <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
             <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
-
         </fieldset>
+
         <button name="submit" type="submit"  data-submit="...Sending">Sign Up</button>
       </form>
     <!-- </div> -->
-  <!-- </div> -->
+  </div>
 </body>
 
 </html>

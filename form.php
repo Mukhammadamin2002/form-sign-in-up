@@ -9,12 +9,12 @@
         <fieldset>
         	<legend><span class="number">1</span>Your basic info</legend>
             <input placeholder="Your name" type="text" tabindex="1" name="name" value="<?= $name ?>" autofocus>
-            <span class="error"><?= $name_error ?? '' ?></span>
+            <span class="error"><?= $name_error ?></span>
         </fieldset>
 
         <fieldset>
             <input placeholder="Your Email Address" type="text" name="email" value="<?= $email ?>" tabindex="2" >
-            <span class="error"><?= $email_error?></span>
+            <span class="error"><?= $email_error ?></span>
         </fieldset>
 
         <fieldset>
@@ -34,6 +34,11 @@
         <fieldset>
             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
         </fieldset>
-        <div class="success"><?= $success; ?></div>
+
+        <fieldset>
+            <h4>You are new around here
+            <a href="sign-up.php">Sign Up</a></h4>
+        </fieldset>
+        
     </form>
   </div>

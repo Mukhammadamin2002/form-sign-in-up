@@ -39,9 +39,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
       	$password = test_input($_POST["password"]);
       	if (!preg_match('/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{6,12}$/', $password))
       	{
-      		$password_error = "it Should Include at least 6 no more than 12 ";
+      		$password_error = "it Should Include at least 6 no more than 12";
       	}
       }
+        // header("location: result.php?name=$name&email=$email&phone=$phone&url=$url");
+
     }
 
      function test_input($data)

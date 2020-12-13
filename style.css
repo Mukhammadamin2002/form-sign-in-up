@@ -1,4 +1,4 @@
-	@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
 * {
 	margin:0;
@@ -127,7 +127,9 @@ fieldset {
 	-moz-transition:background 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
 }
-
+button {
+	border: 40px;
+}
 #contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
 
 #contact input:focus, #contact textarea:focus {
