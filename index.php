@@ -42,6 +42,7 @@
             <label for="bio">Biography:</label>
             <textarea id="bio" name="user_bio"></textarea>
         </fieldset>
+        
         <fieldset>
             <label>Interests:</label>
             <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
