@@ -37,7 +37,7 @@
 
         <fieldset>
             <h4>You are new around here
-            <a href="sign-up.php">Sign Up</a></h4>
+            <a href="index.php">Sign Up</a></h4>
         </fieldset>
         
     </form>

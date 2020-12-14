@@ -37,18 +37,18 @@
             <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or older</label>
         </fieldset>
 
-        <fieldset>
-            <legend><span class="number">2</span>Your profile</legend>
-            <label for="bio">Biography:</label>
-            <textarea id="bio" name="user_bio"></textarea>
-        </fieldset>
-        
-        <fieldset>
-            <label>Interests:</label>
-            <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
-            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
-            <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
-        </fieldset>
+            <fieldset>
+                <legend><span class="number">2</span>Your profile</legend>
+                <label for="bio">Biography:</label>
+                <textarea id="bio" name="user_bio"></textarea>
+            </fieldset>
+            
+            <fieldset>
+                <label>Interests:</label>
+                <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
+                <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
+                <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
+            </fieldset>
 
         <button name="submit" type="submit"  data-submit="...Sending">Sign Up</button>
       </form>
